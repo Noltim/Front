@@ -1,12 +1,12 @@
-import Form from '../checkIn/Form';
+import Form from '../FormWrite/Form';
 import styles from './NewForm.module.css';
 
 function NewForm(){
     return(
         <div className={styles.newform_container}>
             <h1>Agendamento</h1>
-            <p>Agende o dia do seu show</p>
-            <Form/>
+            <p>Escolhe o melhor dia para seu show</p>
+            <Form btnText="Agendar"/>
         </div>
     )
 }
