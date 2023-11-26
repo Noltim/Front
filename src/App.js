@@ -3,7 +3,7 @@ import Home from './components/pages/Home';
 import Company from './components/pages/Company';
 import Contact from './components/pages/Contact';
 import NewForm from './components/pages/NewForm';
-import Forms from './components/pages/Forms';
+import FormPage from './components/pages/FormsPage';
 import Container from './components/layout/Container';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
@@ -18,7 +18,7 @@ function App() {
           <Route path="/company" element={<Company />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/newform" element={<NewForm />} />
-          <Route path="/forms" element={<Forms />} />
+          <Route path="/forms" element={<FormPage />} />
         </Routes>
       </Container>
       <Footer />
