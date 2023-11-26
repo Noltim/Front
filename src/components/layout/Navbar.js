@@ -5,22 +5,22 @@ import logo from "../../img/icons8-cerveja-64.png"
 
 function Navbar() {
   return (
-    <nav class={styles.navbar}>
+    <nav className={styles.navbar}>
       <Container>
         <Link to="/">
           <img src={logo} alt="Av2" />
         </Link>
-        <ul class={styles.list}>
-          <li class={styles.item}>
+        <ul className={styles.list}>
+          <li>
             <Link to="/">Home</Link>
           </li>
-          <li class={styles.item}>
+          <li>
             <Link to="/forms" >Agendamentos</Link>
           </li>
-          <li class={styles.item}>
+          <li>
             <Link to="/company" >Empresa</Link>
           </li>
-          <li class={styles.item}>
+          <li>
             <Link to="/contact" >Contato</Link>
           </li>
         </ul>

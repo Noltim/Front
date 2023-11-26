@@ -11,16 +11,16 @@
     align-items: center;
   }
   
-  .item {
+  .list li {
     margin-right: 1em;
   }
   
-  .item a {
+  .list li a {
     color: #fff;
     text-decoration: none;
   }
   
-  .item a:hover {
+  .list li a:hover {
     color: #ffbb33;
     text-decoration: none;
   }
