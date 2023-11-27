@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
+  position: relative;
 }
 
 html,
@@ -10,4 +11,21 @@ body,
 #root {
   background-color: #efefef;
   height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+
+  * {
+    overflow-x: hidden; 
+    overflow-y: hidden;
+  }
+
+}
+
+@media screen and (max-width: 700px) and (orientation: landscape) {
+
+  * {
+    overflow-x: hidden;
+  }
+  
 }

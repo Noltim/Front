@@ -24,3 +24,22 @@
     color: #ffbb33;
     text-decoration: none;
   }
+
+  @media screen and (max-width: 600px) {
+    .navbar {
+        display: flex;
+        padding: 0.5em 1em; /* Adicione um espaço superior menor aqui */
+        font-size: 75%;
+    }
+
+    .list {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .list li {
+        margin-right: 0.5em;
+    }
+}
