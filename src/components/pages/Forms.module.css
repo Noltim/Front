@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    grid-column: span 12;
+}
+
+.event-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    grid-column: span 12;
+}
+
+.event-card p {
+    margin: 0;
+}
+
+@media (min-width: 576px) {
+    .event-card {
+        grid-column: span 6;
+    }
+}
+
+@media (min-width: 768px) {
+    .event-card {
+        grid-column: span 4;
+    }
+}
+
+@media (min-width: 992px) {
+    .event-card {
+        grid-column: span 3;
+    }
+}
+
+@media (min-width: 1200px) {
+    .event-card {
+        grid-column: span 2;
+    }
+}
+
+hr {
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}

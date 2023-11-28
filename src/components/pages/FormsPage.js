@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './Forms.module.css';
 
 function Forms() {
     // Estado para armazenar os dados do localStorage
@@ -15,10 +16,10 @@ function Forms() {
     }, []); // O segundo parâmetro vazio [] garante que o useEffect seja executado apenas uma vez durante a montagem do componente
 
     return (
-        <div>
+        <div className="container">
             <h1>Eventos na casa</h1>
             {formDataArray.map((formData, index) => (
-                <div key={index}>
+                <div className="event-card" key={index}>
                     <p>Nome da Banda: {formData.name}</p>
                     <p>Data do Show: {formData.dateShow}</p>
                     <p>Gênero Musical: {formData.category_id}</p>
